@@ -4,16 +4,25 @@ HookApp("Navicat Premium", (hook, getPointer, getClassMethod, appBaseAddr) => {
   hook(
     getClassMethod("IAPHelper", "- productSubscriptionStillHaveTrialPeriod"),
     (ths, retv) => {
-      log(
-        "IAPHelper productSubscriptionStillHaveTrialPeriod return value:" + retv
-      );
-      log("return value:" + retv);
       retv.replace(ptr(0));
     },
     (ths, args) => {
-      log(
-        "IAPHelper productSubscriptionStillHaveTrialPeriod: hooked in.."
-      );
     }
+  );
+
+  hook(
+    getClassMethod("IAPHelper", "- isProductSubscriptionInGracePeriod"),
+    (ths, retv) => {
+      retv.replace(ptr(0));
+    },
+    (ths, args) => {}
+  );
+
+  hook(
+    getClassMethod("IAPHelper", "- isProductSubscriptionStillValid"),
+    (ths, retv) => {
+      retv.replace(ptr(1));
+    },
+    (ths, args) => {}
   );
 });
