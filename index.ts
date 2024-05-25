@@ -25,4 +25,19 @@ HookApp("Navicat Premium", (hook, getPointer, getClassMethod, appBaseAddr) => {
     },
     (ths, args) => {}
   );
+
+  Interceptor.replace(
+    new NativeFunction(
+      getClassMethod("AppStoreReceiptValidation", "+ validate").target,
+      "void",
+      []
+    ),
+    new NativeCallback(
+      function () {
+        console.log("Hook ptrace Bypass!!!");
+      },
+      "void",
+      []
+    )
+  );
 });
