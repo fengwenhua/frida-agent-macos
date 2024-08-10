@@ -9,8 +9,8 @@ import frida
 import os
 
 
-def NavicatPremium():
-    launchApp("/Applications/Navicat Premium.app/Contents/MacOS/Navicat Premium")
+def AutoSwitchInput():
+    launchApp("/Applications/AutoSwitchInput.app/Contents/MacOS/AutoSwitchInput")
 
 
 def launchApp(image, js="_agent.js"):
@@ -20,4 +20,4 @@ def launchApp(image, js="_agent.js"):
 
 
 if __name__ == "__main__":
-    NavicatPremium()
+    AutoSwitchInput()
