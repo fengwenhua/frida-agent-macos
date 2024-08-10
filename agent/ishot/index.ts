@@ -1,4 +1,4 @@
-import { HookApp, log } from '../Utils.js';
+import { HookApp, log } from './agent/Utils.js';
 
 HookApp('iShot', (hook, getPointer, getClassMethod, appBaseAddr) => {
   hook(
