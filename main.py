@@ -9,8 +9,8 @@ import frida
 import os
 
 
-def AutoSwitchInput():
-    launchApp("/Applications/AutoSwitchInput.app/Contents/MacOS/AutoSwitchInput")
+def iRightMouse():
+    launchApp("/Applications/iRightMouse.app/Contents/MacOS/iRightMouse")
 
 
 def launchApp(image, js="_agent.js"):
@@ -20,4 +20,4 @@ def launchApp(image, js="_agent.js"):
 
 
 if __name__ == "__main__":
-    AutoSwitchInput()
+    iRightMouse()
