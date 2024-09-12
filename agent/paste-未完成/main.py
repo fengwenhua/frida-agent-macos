@@ -9,8 +9,8 @@ import frida
 import os
 
 
-def Paper():
-    launchApp("/Applications/Paper.app/Contents/MacOS/Paper")
+def Paste():
+    launchApp("/Applications/Paste.app/Contents/MacOS/Paste")
 
 
 def launchApp(image, js="_agent.js"):
@@ -20,4 +20,4 @@ def launchApp(image, js="_agent.js"):
 
 
 if __name__ == "__main__":
-    Paper()
+    Paste()
