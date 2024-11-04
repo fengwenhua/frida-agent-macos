@@ -9,8 +9,8 @@ import frida
 import os
 
 
-def hapigo():
-    launchApp("/Applications/HapiGo.app/Contents/MacOS/HapiGo")
+def Vimo():
+    launchApp("/Applications/Vimo Rebinder.app/Contents/MacOS/Vimo Rebinder")
 
 
 def launchApp(image, js="_agent.js"):
@@ -20,4 +20,4 @@ def launchApp(image, js="_agent.js"):
 
 
 if __name__ == "__main__":
-    hapigo()
+    Vimo()
