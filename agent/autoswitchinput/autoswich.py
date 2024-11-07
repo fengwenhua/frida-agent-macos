@@ -9,8 +9,9 @@ import frida
 import os
 
 
-def iRightMouse():
-    launchApp("/Applications/iShot.app/Contents/MacOS/iShot")
+def autoswitch():
+    
+    launchApp("/Applications/AutoSwitchInput.app/Contents/MacOS/AutoSwitchInput")
 
 
 def launchApp(image, js="_agent.js"):
@@ -20,4 +21,4 @@ def launchApp(image, js="_agent.js"):
 
 
 if __name__ == "__main__":
-    iRightMouse()
+    autoswitch()

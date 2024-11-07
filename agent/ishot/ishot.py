@@ -9,7 +9,8 @@ import frida
 import os
 
 
-def iRightMouse():
+def iShot():
+    
     launchApp("/Applications/iShot.app/Contents/MacOS/iShot")
 
 
@@ -20,4 +21,4 @@ def launchApp(image, js="_agent.js"):
 
 
 if __name__ == "__main__":
-    iRightMouse()
+    iShot()

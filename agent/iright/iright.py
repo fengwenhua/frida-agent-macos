@@ -10,6 +10,7 @@ import os
 
 
 def iRightMouse():
+    
     launchApp("/Applications/iRightMouse.app/Contents/MacOS/iRightMouse")
 
 
